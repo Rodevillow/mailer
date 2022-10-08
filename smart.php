@@ -1,14 +1,18 @@
 <?php
+
 $to = "asvrodya@gmail.com";
 $subject = "This is subject";
 $message = "This is simple text message.";
 $header = "From:from@yantranet.com \r\n";
-$retval = mail ($to,$subject,$message,$header);
-if( $retval == true ){
+
+$retval = mail($to,$subject,$message,$header);
+
+if ($retval == true){
     echo "Message sent successfully...";
 }else{
     echo "Message could not be sent...";
 }
+
 //print_r($_POST);
 //
 //$name = $_POST['name'];
